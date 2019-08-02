@@ -1,2 +1,0 @@
-# testRocketLabs
-Entrevista técnica
