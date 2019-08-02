@@ -1,0 +1,18 @@
+<div class="container">
+    <form class="example-form" (ngSubmit)="login(f.value)" #f="ngForm">
+
+      <h6>Inicio de Sesion</h6>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="email" name="email" ngModel value="">
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="password" name="password" ngModel value="">
+          </mat-form-field>
+
+
+          <div class="form-group">
+              <button [disabled]="!f.valid" class="btn btn-primary submit-btn btn-block">Iniciar Sesion</button>
+            </div> 
+      </form>
+</div>

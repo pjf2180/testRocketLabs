@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Nuevo ToDo</h1>
+<div mat-dialog-content>
+  <p>Asigna un titulo</p>
+  <mat-form-field>
+    <input matInput [(ngModel)]="data.titulo">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancelar</button>
+  <button mat-button (click)="onAdd()" [mat-dialog-close]="data.animal">Agregar Nuevo</button>
+</div>

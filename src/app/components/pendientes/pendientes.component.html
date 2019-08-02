@@ -1,0 +1,14 @@
+<div class="container">
+
+    <mat-selection-list #todoList>
+        <mat-list-option *ngFor="let item of todos | async">
+          {{item.titulo}}
+        </mat-list-option>
+      </mat-selection-list>
+      <p>
+        Options selected: {{todoList.selectedOptions.selected.length}}
+      </p>
+      <button *ngIf="todoList.selectedOptions.selected.length > 0"
+         mat-flat-button color="warn"
+         (click)="eliminar(todoList.selectedOptions.selected.)">Eliminar</button>
+</div>
